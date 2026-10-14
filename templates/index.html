@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Practice App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main>
+    <h1>DevOps Practice App</h1>
+    <p>Running in environment: <strong>{{ env }}</strong></p>
+    <p>Try these endpoints:</p>
+    <ul>
+      <li><code>/health</code> — health check (used by Elastic Beanstalk)</li>
+      <li><code>/api/version</code> — returns app version as JSON</li>
+    </ul>
+  </main>
+</body>
+</html>
